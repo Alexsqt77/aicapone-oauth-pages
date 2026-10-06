@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Aicapone personal-assistant integration.">
+  <title>Privacy Policy — Aicapone</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f5;
+      --surface: #ffffff;
+      --text: #181817;
+      --muted: #666660;
+      --border: #deded8;
+      --accent: #225ad6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11110f;
+        --surface: #1a1a17;
+        --text: #f3f3ef;
+        --muted: #aaa9a0;
+        --border: #34342f;
+        --accent: #82aaff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.68;
+    }
+    main {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0 64px;
+    }
+    .back {
+      display: inline-block;
+      margin-bottom: 38px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .back:hover, .back:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.6rem, 8vw, 5.2rem);
+      font-weight: 500;
+      letter-spacing: -0.045em;
+      line-height: 1;
+    }
+    .effective {
+      margin: 18px 0 42px;
+      color: var(--muted);
+    }
+    section {
+      padding: 26px 0;
+      border-top: 1px solid var(--border);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+      letter-spacing: -0.01em;
+    }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 10px 0 0; padding-left: 22px; }
+    li + li { margin-top: 8px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    code {
+      padding: 0.12em 0.38em;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: var(--surface);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Aicapone home</a>
+    <h1>Privacy policy</h1>
+    <p class="effective">Effective date: 6 October 2026</p>
+
+    <section>
+      <h2>Overview</h2>
+      <p>Aicapone is a private, non-commercial personal-assistant integration operated for a single user. This policy explains how the integration accesses and uses Google user data.</p>
+    </section>
+
+    <section>
+      <h2>Google data accessed</h2>
+      <p>Aicapone requests narrowly scoped access to:</p>
+      <ul>
+        <li>Calendar events on the secondary Google Calendar created by the Aicapone application.</li>
+        <li>Google Drive files created by Aicapone or files the user explicitly opens for the integration.</li>
+      </ul>
+      <p>The integration does not request access to unrelated personal calendars or unrelated Drive files.</p>
+    </section>
+
+    <section>
+      <h2>How data is used</h2>
+      <p>Google user data is used only to provide user-requested personal-assistant functions, including:</p>
+      <ul>
+        <li>Creating, reading, updating, and deleting events on the app-created calendar.</li>
+        <li>Preparing calendar summaries and reminders.</li>
+        <li>Creating and maintaining a user-requested subscription-tracking spreadsheet.</li>
+        <li>Producing user-requested subscription and billing summaries.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data sharing and advertising</h2>
+      <p>Aicapone does not sell Google user data, share it with advertisers, use it for advertising, or provide it to data brokers. Data is not disclosed to third parties except when required by law or necessary to operate Google’s own APIs at the user’s request.</p>
+    </section>
+
+    <section>
+      <h2>Storage and retention</h2>
+      <p>Calendar events and spreadsheets remain in the user’s Google account. OAuth credentials are stored on the user-controlled Hermes Agent system and are used only to perform authorized requests. Access is retained until the user revokes it or removes the locally stored authorization.</p>
+    </section>
+
+    <section>
+      <h2>Security</h2>
+      <p>Aicapone uses least-privileged OAuth scopes and limits access to app-created or explicitly opened resources. No security measure can guarantee absolute protection, but access is kept as narrow as the integration’s functions allow.</p>
+    </section>
+
+    <section>
+      <h2>User control and deletion</h2>
+      <p>The user can revoke Aicapone’s Google access at any time from <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. The user can also delete calendar events, spreadsheets, and other app-created data directly from Google Calendar or Google Drive.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>This policy may be updated when the integration’s features or Google permissions change. The effective date at the top of this page will be revised when material changes are made.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Privacy questions can be submitted through the repository’s <a href="https://github.com/Alexsqt77/aicapone-oauth-pages/issues">GitHub Issues page</a>.</p>
+    </section>
+  </main>
+</body>
+</html>

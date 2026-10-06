@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aicapone is a private personal-assistant integration for calendar, reminders, and subscription tracking.">
+  <title>Aicapone</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f5;
+      --surface: #ffffff;
+      --text: #181817;
+      --muted: #666660;
+      --border: #deded8;
+      --accent: #225ad6;
+      --accent-hover: #1747b0;
+      --shadow: 0 18px 60px rgba(20, 20, 18, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11110f;
+        --surface: #1a1a17;
+        --text: #f3f3ef;
+        --muted: #aaa9a0;
+        --border: #34342f;
+        --accent: #82aaff;
+        --accent-hover: #a9c3ff;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0 48px;
+    }
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 680px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 9vw, 6.4rem);
+      font-weight: 500;
+      letter-spacing: -0.055em;
+      line-height: 0.98;
+    }
+    .intro {
+      max-width: 610px;
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2.3vw, 1.28rem);
+    }
+    .panel {
+      margin-top: 54px;
+      padding: 30px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    h2 {
+      margin: 0 0 18px;
+      font-size: 1.1rem;
+      letter-spacing: -0.01em;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 12px;
+      padding: 12px 0;
+      border-top: 1px solid var(--border);
+    }
+    li:first-child { border-top: 0; padding-top: 0; }
+    li:last-child { padding-bottom: 0; }
+    .mark { color: var(--accent); font-weight: 700; }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .button:hover, .button:focus-visible {
+      color: var(--accent-hover);
+      border-color: var(--accent);
+      outline: none;
+    }
+    footer {
+      margin-top: 52px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Private personal assistant integration</p>
+    <h1>Aicapone</h1>
+    <p class="intro">
+      Aicapone is a private assistant operated for a single user. It helps manage an isolated calendar, reminders, briefings, and a subscription tracker while using narrowly scoped Google access.
+    </p>
+
+    <section class="panel" aria-labelledby="access-heading">
+      <h2 id="access-heading">What the integration accesses</h2>
+      <ul>
+        <li><span class="mark" aria-hidden="true">01</span><span>Calendar events only on the secondary calendar created by Aicapone.</span></li>
+        <li><span class="mark" aria-hidden="true">02</span><span>Google Drive files created by Aicapone or explicitly opened for the integration.</span></li>
+        <li><span class="mark" aria-hidden="true">03</span><span>No access to unrelated personal calendars or unrelated Drive files.</span></li>
+      </ul>
+    </section>
+
+    <nav class="actions" aria-label="Policies and contact">
+      <a class="button" href="privacy.html">Privacy policy</a>
+      <a class="button" href="https://github.com/Alexsqt77/aicapone-oauth-pages/issues">Contact via GitHub Issues</a>
+    </nav>
+
+    <footer>
+      Aicapone is a private, non-commercial personal integration. It is not offered as a public service.
+    </footer>
+  </main>
+</body>
+</html>
